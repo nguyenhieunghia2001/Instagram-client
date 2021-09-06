@@ -15,6 +15,20 @@ const RegisterPage = () => {
           <div className="header">
             <img src={logo} alt="logo" />
           </div>
+          <div className="cont">
+            <p>Đăng ký để xem ảnh và video từ bạn bè.</p>
+          </div>
+          <div className="login-facebook">
+            <Link to="">
+              <AiFillFacebook className="icon" />
+              <span>Đăng nhập bằng Facebook</span>
+            </Link>
+          </div>
+          <div className="divider-group">
+            <div className="left"></div>
+            <p>HOẶC</p>
+            <div className="right"></div>
+          </div>
           <div className="form">
             <InputPlaceholder placeholder="Số điện thoại" />
             <InputPlaceholder placeholder="Tên đầy đủ" />
@@ -24,25 +38,20 @@ const RegisterPage = () => {
               <button className="btn btn-auth">Đăng ký</button>
             </div>
           </div>
-          <div className="divider-group">
-            <div className="left"></div>
-            <p>HOẶC</p>
-            <div className="right"></div>
-          </div>
-          <div className="login-facebook">
-            <Link to="">
-              <AiFillFacebook className="icon" />
-              <span>Đăng nhập bằng Facebook</span>
-            </Link>
-          </div>
-          <div className="forget">
-            <Link to="">Quên mật khẩu?</Link>
+          <div className="rule">
+            <p>
+              Bằng cách đăng ký, bạn đồng ý với
+              <strong>
+                Điều khoản, Chính sách dữ liệu và Chính sách cookie
+              </strong>
+              của chúng tôi.
+            </p>
           </div>
         </div>
         <div className="redirect wrapper-border">
           <span>
-            Bạn chưa có tài khoản ư?
-            <Link to="/register">Đăng nhập</Link>
+            Bạn đã có tài khoản?
+            <Link to="/login">Đăng nhập</Link>
           </span>
         </div>
       </div>
