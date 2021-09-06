@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import HomePage from "../Pages/Home/HomePage";
+import Layout from "../Components/common/Layouts";
+import HomePage from "../Pages/Home/HomePage";
 import LoginPage from "../Pages/Login/LoginPage";
 import RegisterPage from "../Pages/Register/RegisterPage";
 function App() {
@@ -12,6 +13,12 @@ function App() {
         </Route>
         <Route path="/register" exact>
           <RegisterPage />
+        </Route>
+
+        <Route path="/" exact>
+          <Layout>
+            <HomePage />
+          </Layout>
         </Route>
       </Switch>
     </Router>

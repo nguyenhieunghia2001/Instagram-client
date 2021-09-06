@@ -27,7 +27,7 @@
     }
   }
   &-menu {
-      margin-top: 40px;
+    margin-top: 40px;
     ul {
       list-style-type: none;
       padding: 0;
@@ -39,6 +39,45 @@
           color: #bdbdbd;
           padding: 0 5px;
           font-size: 13px;
+        }
+      }
+    }
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bdbdbd;
+  background-color: #fff;
+  .logo {
+    img {
+      height: 40px;
+    }
+  }
+
+  &-menu {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline-table;
+        padding: 0 10px;
+        cursor: pointer;
+        .icon {
+          svg {
+            color: #222;
+            font-size: 30px;
+          }
+        }
+        .avatar {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          img {
+            width: 100%;
+            border-radius: 50%;
+          }
         }
       }
     }

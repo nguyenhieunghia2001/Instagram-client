@@ -5,7 +5,7 @@ import PasswordPlaceholder from "../../Components/common/InputPlaholder/Password
 import { AiFillFacebook } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "./style.scss";
-import Footer from "../../Components/common/Layouts/LayoutAuth/Footer";
+import Footer from "../../Components/common/Layouts/Footer";
 
 const LoginPage = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AplleImg from "../../../../assets/images/download-apple.png";
-import CHPlayImg from "../../../../assets/images/download-chplay.png";
+import AplleImg from "../../../assets/images/download-apple.png";
+import CHPlayImg from "../../../assets/images/download-chplay.png";
 import "./style.scss";
 
 const Footer = () => {

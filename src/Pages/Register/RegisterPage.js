@@ -5,7 +5,7 @@ import PasswordPlaceholder from "../../Components/common/InputPlaholder/Password
 import { AiFillFacebook } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "../Login/style.scss";
-import Footer from "../../Components/common/Layouts/LayoutAuth/Footer";
+import Footer from "../../Components/common/Layouts/Footer";
 
 const RegisterPage = () => {
   return (
@@ -41,10 +41,11 @@ const RegisterPage = () => {
           <div className="rule">
             <p>
               Bằng cách đăng ký, bạn đồng ý với
+              {' '}
               <strong>
                 Điều khoản, Chính sách dữ liệu và Chính sách cookie
               </strong>
-              của chúng tôi.
+              {' '}của chúng tôi.
             </p>
           </div>
         </div>
