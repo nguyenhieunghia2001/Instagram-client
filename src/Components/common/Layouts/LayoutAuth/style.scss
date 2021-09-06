@@ -1,0 +1,46 @@
+.footer {
+  &-auth {
+    margin-top: 20px;
+    .download {
+      width: 350px;
+      margin: auto;
+      padding: 0 40px;
+      text-align: center;
+      p {
+        margin: 20px 0;
+        font-size: 15px;
+      }
+      .img-group {
+        display: flex;
+        justify-content: space-between;
+        img {
+          height: 40px;
+        }
+      }
+    }
+    .copyright {
+      p {
+        text-align: center;
+        font-size: 13px;
+        color: #bdbdbd;
+      }
+    }
+  }
+  &-menu {
+      margin-top: 40px;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      li {
+        display: inline-table;
+        a {
+          text-decoration: none;
+          color: #bdbdbd;
+          padding: 0 5px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

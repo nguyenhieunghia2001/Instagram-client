@@ -1,0 +1,82 @@
+@import '../../assets/variable.scss';
+
+.auth {
+  width: 350px;
+  margin: auto;
+  .wrapper {
+    margin-top: 40px;
+    padding: 20px 40px;
+    .header {
+      margin: 10px 40px;
+      img {
+        width: 100%;
+      }
+    }
+    .form {
+      margin-top: 20px;
+      .btn-box {
+        margin-top: 15px;
+        .btn-auth {
+          width: 100%;
+          background-color: #0095f6;
+          padding: 3px 0px;
+          font-weight: 600;
+          color: #fff;
+          font-size: 14px;
+        }
+      }
+    }
+    .divider-group {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      .left,
+      .right {
+        height: 1px;
+        background-color: #bdbdbd;
+        width: 100%;
+      }
+      p {
+        color: #bdbdbd;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0;
+        padding: 0 20px;
+      }
+    }
+    .login-facebook {
+      a {
+        text-decoration: none;
+        color: #385185;
+      }
+      text-align: center;
+      .icon {
+        font-size: 22px;
+      }
+      span {
+        padding-left: 10px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+    .forget {
+      margin-top: 20px;
+      text-align: center;
+      a {
+        text-decoration: none;
+        font-size: 13px;
+        color: #00376b;
+      }
+    }
+  }
+  .redirect{
+    padding: 20px 40px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    a{
+      text-decoration: none;
+      margin-left: 5px;
+    }
+  }
+}
