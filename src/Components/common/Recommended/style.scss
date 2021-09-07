@@ -1,0 +1,42 @@
+@import "../../../assets/variable.scss";
+.recommended__tyleList {
+  display: flex;
+  align-items: center;
+  .img-box {
+    margin-right: 20px;
+    img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  .sortinfo {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    &__name {
+      text-decoration: none;
+      color: $color-black;
+      font-weight: 600;
+    }
+    div {
+        color: #8e8e8e;
+        line-height: 14px;
+    }
+  }
+  .btn-changeaccount {
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: auto !important;
+    &--text {
+      color: $color-primary;
+      padding: 0;
+    }
+    &--button {
+      background-color: $color-primary;
+      color: $color-white;
+      padding: 3px 10px;
+    }
+  }
+}

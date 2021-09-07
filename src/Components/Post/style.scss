@@ -13,6 +13,7 @@
   border: 1px solid $color-gray;
   background-color: #fff;
   border-radius: 3px;
+  margin-bottom: 20px;
   .header {
     display: flex;
     align-items: center;
@@ -40,7 +41,7 @@
     }
   }
   .cont {
-    padding: 0 15px;
+    padding: 0 15px 15px;
     .control {
       display: flex;
       .icon {
@@ -60,6 +61,7 @@
     }
     .content {
       display: flex;
+      padding: 3px 0;
       span {
         margin-left: 10px;
         font-size: 14px;

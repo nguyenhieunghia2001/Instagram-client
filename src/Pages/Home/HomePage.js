@@ -1,22 +1,32 @@
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
 import CardItem from "../../Components/Post/Card";
+
 import "./style.scss";
+import RecommendedTyleListItem from "../../Components/common/Recommended/RecommendedItem";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <Container>
-      <div className="homepage">
-        <Row>
-          <Col lg={2}></Col>
-          <Col lg={6}>
-            <CardItem />
-          </Col>
-          <Col lg={2}></Col>
-          <Col lg={2}></Col>
-        </Row>
+    <div className="homepage">
+      <div className="left">
+        <CardItem />
       </div>
-    </Container>
+      <div className="right">
+        <div className="myaccount">
+          <RecommendedTyleListItem
+            size={56}
+            button={{ text: "Chuyển", tyle: "text" }}
+          />
+        </div>
+        <div className="recommended">
+          <div className="header">
+            <p>Gợi ý cho bạn</p>
+            <Link to="">Xem tất cả</Link>
+          </div>
+          
+        </div>
+      </div>
+    </div>
   );
 };
 
