@@ -2,12 +2,14 @@ import React from "react";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { RiMessage3Line } from "react-icons/ri";
 import { BiBookmark, BiDotsHorizontalRounded } from "react-icons/bi";
-import { IoPaperPlaneOutline } from "react-icons/io";
+import { IoPaperPlaneOutline } from "react-icons/io5";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
+import AvatarImg from "../../assets/images/avatar.jpg";
+import './style.scss';
 
-const Card = () => {
+const CardItem = () => {
   return (
-    <div className="card">
+    <div className="card-item">
       <div className="header">
         <div className="avatar">
           <img src={AvatarImg} alt="avatar" />
@@ -17,7 +19,9 @@ const Card = () => {
           <BiDotsHorizontalRounded />
         </div>
       </div>
-      <div className="images"></div>
+      <div className="images">
+        <img src={AvatarImg} alt="avatar" />
+      </div>
       <div className="cont">
         <div className="control">
           <div className="icon">
@@ -28,14 +32,14 @@ const Card = () => {
           </div>
           <div className="icon">
             <IoPaperPlaneOutline />
-          </div>
-          <div className="icon">
+          </div> 
+          <div className="icon bookmark">
             <BiBookmark />
           </div>
         </div>
         <p className="like">9 lượt thích</p>
         <div className="content">
-          <p>damchuanh</p>
+          <p className="friend-name">hanie.n2k</p>
           <span>V là hết thời học sinh :((</span>
         </div>
         <div className="time">
@@ -53,4 +57,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default CardItem;
