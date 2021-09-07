@@ -4,6 +4,7 @@ import CardItem from "../../Components/Post/Card";
 import "./style.scss";
 import RecommendedTyleListItem from "../../Components/common/Recommended/RecommendedItem";
 import { Link } from "react-router-dom";
+import RecommendedListTyleList from "../../Components/Home/RecommendedList";
 
 const HomePage = () => {
   return (
@@ -15,7 +16,7 @@ const HomePage = () => {
         <div className="myaccount">
           <RecommendedTyleListItem
             size={56}
-            button={{ text: "Chuyển", tyle: "text" }}
+            button={{ text: "Chuyển", type: "text" }}
           />
         </div>
         <div className="recommended">
@@ -23,7 +24,7 @@ const HomePage = () => {
             <p>Gợi ý cho bạn</p>
             <Link to="">Xem tất cả</Link>
           </div>
-          
+          <RecommendedListTyleList />
         </div>
       </div>
     </div>

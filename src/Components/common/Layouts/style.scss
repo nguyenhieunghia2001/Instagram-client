@@ -45,6 +45,9 @@
   }
 }
 .navbar {
+  position: fixed !important;
+  width: 100%;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #bdbdbd;
@@ -87,5 +90,5 @@
 .body-layout {
   max-width: 935px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 77px;
 }
