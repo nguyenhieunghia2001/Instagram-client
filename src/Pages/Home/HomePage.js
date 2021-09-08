@@ -5,11 +5,13 @@ import "./style.scss";
 import RecommendedTyleListItem from "../../Components/common/Recommended/RecommendedItem";
 import { Link } from "react-router-dom";
 import RecommendedListTyleList from "../../Components/Home/RecommendedList";
+import Story from "../../Components/Home/Story";
 
 const HomePage = () => {
   return (
     <div className="homepage">
       <div className="left">
+      <Story />
         <CardItem />
       </div>
       <div className="right">

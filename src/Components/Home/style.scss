@@ -1,0 +1,33 @@
+@import "../../assets/variable.scss";
+
+.story {
+  border: 1px solid $color-gray;
+  background-color: $color-white;
+  margin-bottom: 20px;
+  padding: 18px;
+  border-radius: 3px;
+  &-item {
+    cursor: pointer;
+    .avatar {
+      width: 64px;
+      height: 64px;
+      border: 2px solid #acacac5c;
+      border-radius: 50%;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+      }
+    }
+    .name {
+      font-size: 13px;
+      color: $color-font-1;
+      margin-bottom: 0;
+    }
+  }
+}
