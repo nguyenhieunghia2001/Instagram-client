@@ -29,6 +29,7 @@
     }
     .icon {
       margin-left: auto;
+      cursor: pointer;
       svg {
         font-size: 23px;
         color: $color-black;
@@ -104,6 +105,30 @@
       padding: 0 !important;
       font-weight: 600;
       color: $color-primary;
+    }
+  }
+}
+
+//Option post
+.post-option {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 14px 0;
+      border-bottom: 1px solid #8e8e8e4f;
+    }
+  }
+  &--item {
+    p {
+      text-align: center;
+      font-size: 14px;
+      margin: 0;
+    }
+    .highlight {
+      font-weight: 700;
+      color: #ed4956;
     }
   }
 }
