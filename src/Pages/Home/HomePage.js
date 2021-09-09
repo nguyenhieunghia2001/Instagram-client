@@ -6,13 +6,15 @@ import RecommendedTyleListItem from "../../Components/common/Recommended/Recomme
 import { Link } from "react-router-dom";
 import RecommendedListTyleList from "../../Components/Home/RecommendedList";
 import Story from "../../Components/Home/Story";
+import RecommendedCart from "../../Components/common/Recommended/RecommendedCard";
 
 const HomePage = () => {
   return (
     <div className="homepage">
       <div className="left">
-      <Story />
+        <Story />
         <CardItem />
+        <RecommendedCart />
       </div>
       <div className="right">
         <div className="myaccount">

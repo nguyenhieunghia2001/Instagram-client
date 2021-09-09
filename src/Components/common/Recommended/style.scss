@@ -1,40 +1,117 @@
 @import "../../../assets/variable.scss";
-.recommended__tyleList {
-  display: flex;
-  align-items: center;
-  .img-box {
-    margin-right: 20px;
-    img {
-      border-radius: 50%;
-      cursor: pointer;
-    }
-  }
-  .sortinfo {
+.recommended {
+  &__tyleList {
     display: flex;
-    flex-direction: column;
-    &__name {
-      font-size: 14px;
-      text-decoration: none;
-      color: $color-black;
-      font-weight: 600;
+    align-items: center;
+    .img-box {
+      margin-right: 20px;
+      img {
+        border-radius: 50%;
+        cursor: pointer;
+      }
     }
-    div {
+    .sortinfo {
+      display: flex;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+      }
+      div {
+        font-size: 12px;
+        color: #8e8e8e;
+      }
+    }
+    .btn-changeaccount {
+      font-weight: 600;
       font-size: 12px;
-      color: #8e8e8e;
+      margin-left: auto !important;
+      &--text {
+        color: $color-primary;
+        padding: 0;
+      }
+      &--button {
+        background-color: $color-primary;
+        color: $color-white;
+        padding: 3px 10px;
+      }
     }
   }
-  .btn-changeaccount {
-    font-weight: 600;
-    font-size: 12px;
-    margin-left: auto !important;
-    &--text {
-      color: $color-primary;
-      padding: 0;
+
+  &__tyleCard {
+    &-list {
+      padding: 20px 13px;
+      background-color: $color-white;
+      border: 1px solid $color-gray;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        margin: 0 13px;
+        p {
+          color: $color-font-1;
+          font-weight: 600;
+        }
+        a {
+          text-decoration: none;
+          color: $color-primary;
+        }
+      }
+      .slick-prev,
+      .slick-next {
+        &::before {
+          content: "" !important;
+        }
+        .icon {
+          svg {
+            font-size: 28px;
+            color: #666666cf;
+          }
+        }
+      }
+      .slick-disabled {
+        .icon {
+          svg {
+            opacity: 0.5;
+          }
+        }
+      }
     }
-    &--button {
-      background-color: $color-primary;
-      color: $color-white;
-      padding: 3px 10px;
+    &-item {
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid $color-gray;
+        border-radius: 4px;
+        padding: 20px;
+        margin: 0 13px;
+        .avatar {
+          margin: 5px 0 25px;
+          img {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+          }
+        }
+        .name {
+          font-size: 14px;
+          font-weight: 600;
+          margin: 0;
+        }
+        .follow {
+          font-size: 12px;
+          color: $color-font-1;
+          margin: 2px 0 25px 0;
+        }
+        .btn-recommended--card {
+          width: 100%;
+          background-color: $color-primary;
+          color: $color-white;
+          font-weight: 600;
+          font-size: 14px;
+          padding: 4px 0;
+        }
+      }
     }
   }
 }

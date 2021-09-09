@@ -20,7 +20,7 @@ const Modal = ({ children, width = 400, isShowing, hide }) => {
       // Unbind the event listener on clean up
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [wrapperRef]);
+  }, [wrapperRef, hide, isShowing]);
   return (
     <div className="modal-custom">
       <div className="wrapper" style={{ width: width }} ref={wrapperRef}>
