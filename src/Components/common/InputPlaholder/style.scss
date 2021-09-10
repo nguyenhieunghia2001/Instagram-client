@@ -41,3 +41,18 @@
     }
   }
 }
+.picker-emoji {
+  position: relative;
+  .button {
+    cursor: pointer;
+    svg {
+      font-size: 28px;
+    }
+  }
+ .emoji-table{
+   position: absolute;
+   top: 103%;
+   left: 0;
+   z-index: 20;
+ } 
+}
