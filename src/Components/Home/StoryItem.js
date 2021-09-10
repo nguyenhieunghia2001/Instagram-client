@@ -1,5 +1,5 @@
 import React from "react";
-import AvatarImg from "../../assets/images/avatar.jpg";
+import AvatarImg from "../../assets/images/avatar-1.jpg";
 
 const StoryItem = () => {
   return (
