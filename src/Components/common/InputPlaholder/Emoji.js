@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Picker, { SKIN_TONE_MEDIUM_DARK } from "emoji-picker-react";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
 import useShow from "../../../hooks/useShow";

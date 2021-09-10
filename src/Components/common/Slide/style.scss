@@ -1,0 +1,21 @@
+.slide {
+  .slick-prev,
+  .slick-next {
+    &::before {
+      content: "" !important;
+    }
+    .icon {
+      svg {
+        font-size: 28px;
+        color: #666666cf;
+      }
+    }
+  }
+  .slick-disabled {
+    .icon {
+      svg {
+        opacity: 0.5;
+      }
+    }
+  }
+}
