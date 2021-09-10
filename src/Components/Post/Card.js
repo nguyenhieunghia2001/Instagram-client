@@ -10,6 +10,10 @@ import Modal from "../../Components/common/Modal/Modal";
 
 import "./style.scss";
 import OptionPost from "./OptionPost";
+import Tooltip from "../../Components/common/Tooltip/Tooltip";
+// import Tooltip from "@material-ui/core/Tooltip";
+import SortInfo from "../Friend/SortInfo";
+import Avatar from "../common/Friend/Avatar";
 
 const CardItem = () => {
   const { isShowing: isShowModalOption, toggle: toggleOption } = useShow();
@@ -18,10 +22,13 @@ const CardItem = () => {
     <>
       <div className="card-item">
         <div className="header">
-          <div className="avatar">
-            <img src={AvatarImg} alt="avatar" />
+          <div className="avatar-circle">
+            <Avatar img={AvatarImg} alt="avatar" size={30} />
           </div>
-          <p className="friend-name">hanie.n2k</p>
+          <Tooltip tag={<p className="friend-name">hanie.n2k</p>}>
+            <SortInfo />
+          </Tooltip>
+       
           <div className="icon" onClick={toggleOption}>
             <BiDotsHorizontalRounded />
           </div>

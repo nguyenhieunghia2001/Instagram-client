@@ -1,0 +1,22 @@
+@import "../../../assets/variable.scss";
+.tooltip {
+  &-custom {
+    position: relative;
+    &:hover {
+      .tooltip__obj {
+        display: block;
+      }
+    }
+  }
+  &__obj {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $color-white;
+    border: 1px solid $color-gray;
+    border-radius: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: none;
+    z-index: 10;
+  }
+}

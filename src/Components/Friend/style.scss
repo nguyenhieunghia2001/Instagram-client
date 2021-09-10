@@ -1,0 +1,97 @@
+@import "../../assets/variable.scss";
+.info__sort {
+  width: 390px;
+  .basic {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid $color-gray;
+    &__right {
+      margin-left: 16px;
+      .nickname,
+      .name {
+        font-size: 14px;
+        margin: 0;
+        line-height: 18px;
+      }
+      .nickname {
+        font-weight: 600;
+        color: $color-black;
+      }
+      .name,
+      .follow {
+        color: $color-font-1;
+      }
+      .follow {
+        font-size: 14px;
+      }
+    }
+  }
+  .statistical {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    .collumn {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      line-height: 18px;
+      p {
+        color: $color-black;
+        font-weight: 600;
+        margin: 0;
+      }
+      span {
+        color: $color-font-1;
+      }
+    }
+  }
+  .control {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $color-gray;
+    padding: 16px;
+    button {
+      width: 100%;
+      border: 1px solid $color-gray;
+      color: $color-black;
+      padding: 4px 0px;
+      font-size: 14px;
+      font-weight: 600;
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+  .posted {
+    padding: 16px;
+    border-top: 1px solid $color-gray;
+    .empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .camera {
+        width: 44px;
+        height: 44px;
+        border: 1px solid $color-black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          font-size: 30px;
+          color: $color-black;
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+      }
+      span {
+        font-size: 14px;
+        color: $color-font-1;
+      }
+    }
+  }
+}

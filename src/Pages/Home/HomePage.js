@@ -21,6 +21,7 @@ const HomePage = () => {
           <RecommendedTyleListItem
             size={56}
             button={{ text: "Chuyển", type: "text" }}
+            tooltip={false}
           />
         </div>
         <div className="recommended">
