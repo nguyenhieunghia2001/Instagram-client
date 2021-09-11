@@ -40,13 +40,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+
   &__slide {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    .wrapper-img{
+    .wrapper-img {
       margin: 0 3px;
       cursor: pointer;
     }
@@ -69,6 +69,25 @@
       }
       input[type="file"] {
         display: none;
+      }
+    }
+  }
+  .review__img-inner {
+    position: relative;
+    &:hover{
+      .control-remove{
+        display: block;
+      }
+    }
+    .control-remove {
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      top: 88%;
+      right: 18px;
+      svg {
+        font-size: 40px;
+        color: $color-white;
       }
     }
   }

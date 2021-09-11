@@ -14,7 +14,9 @@ const CreatePost = () => {
 
   const onChangesFile = (e) => {
     const filesFromLocal = e.target.files;
-    var filesArr = Object.values(filesFromLocal)?.map((item) => URL.createObjectURL(item));
+    var filesArr = Object.values(filesFromLocal)?.map((item) =>
+      URL.createObjectURL(item)
+    );
 
     setFiles((pre) => [...pre, ...filesArr]);
   };
@@ -33,7 +35,7 @@ const CreatePost = () => {
       <div className="exist space-height">
         <Row style={{ height: "100%" }}>
           <Col lg={7} style={{ paddingRight: 0 }}>
-            <ReviewImages files={files} setFiles={setFiles}/>
+            {files.length > 0 && <ReviewImages files={files} setFiles={setFiles} />}
           </Col>
           <Col lg={5}>
             <div className="custom">
