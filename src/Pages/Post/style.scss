@@ -1,6 +1,7 @@
 @import "../../assets/variable.scss";
 
 .post {
+  background-color: $color-white;
   display: flex;
   border: 1px solid $color-gray;
   border-radius: 3px;
@@ -19,6 +20,13 @@
     .header {
       display: flex;
       align-items: center;
+      .icon {
+        cursor: pointer;
+        margin-left: auto;
+        svg {
+          font-size: 16px;
+        }
+      }
       .name {
         cursor: pointer;
         font-size: 14px;
@@ -26,6 +34,18 @@
         font-weight: 600;
         margin: 0;
         padding-left: 16px;
+      }
+    }
+    .comment {
+      height: 100%;
+      position: relative;
+      &__list {
+        height: 100%;
+        position: absolute;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
     }
     .divider {

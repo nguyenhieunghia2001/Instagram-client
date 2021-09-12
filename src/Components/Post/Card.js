@@ -6,14 +6,12 @@ import { IoPaperPlaneOutline } from "react-icons/io5";
 import AvatarImg from "../../assets/images/avatar.jpg";
 import useShow from "../../hooks/useShow";
 import Modal from "../../Components/common/Modal/Modal";
-
-import "./style.scss";
 import OptionPost from "./OptionPost";
 import Tooltip from "../../Components/common/Tooltip/Tooltip";
-// import Tooltip from "@material-ui/core/Tooltip";
 import SortInfo from "../Friend/SortInfo";
 import Avatar from "../common/Friend/Avatar";
 import Emoji from "../common/InputPlaholder/Emoji";
+import "./style.scss";
 
 const CardItem = () => {
   const { isShowing: isShowModalOption, toggle: toggleOption } = useShow();
