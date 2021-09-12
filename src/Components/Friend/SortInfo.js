@@ -16,15 +16,15 @@ const SortInfo = () => {
         </div>
       </div>
       <div className="statistical">
-        <div className="collumn post">
+        <div className="collumn">
           <p>39</p>
           <span>Bài viết</span>
         </div>
-        <div className="collumn follower">
+        <div className="collumn">
           <p>117</p>
           <span>Người theo dõi</span>
         </div>
-        <div className="collumn following">
+        <div className="collumn">
           <span>Đang theo dõi</span>
           <p>302</p>
           <span>người dùng</span>

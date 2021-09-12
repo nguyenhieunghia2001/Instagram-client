@@ -1,13 +1,15 @@
 @import "../../../assets/variable.scss";
 
 .post__control {
-  padding: 0 15px 15px;
+  // padding: 0 15px 15px;
   .control {
     display: flex;
     .icon {
-      font-size: 28px;
       padding: 0 8px;
       cursor: pointer;
+      svg {
+        font-size: 28px;
+      }
       &:first-child {
         padding-left: 0 !important;
       }
@@ -39,30 +41,30 @@
   }
 }
 .writecomment {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
-    border-top: 1px solid #bdbdbd;
-    .icon {
-      cursor: pointer;
-      svg {
-        font-size: 28px;
-      }
-    }
-    input {
-      width: 100%;
-      border: none;
-      line-height: 52px;
-      font-size: 14px;
-      padding-left: 20px;
-      &:focus {
-        outline: none;
-      }
-    }
-    .btn {
-      padding: 0 !important;
-      font-weight: 600;
-      color: $color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // padding: 0 16px;
+  // border-top: 1px solid #bdbdbd;
+  .icon {
+    cursor: pointer;
+    svg {
+      font-size: 28px;
     }
   }
+  input {
+    width: 100%;
+    border: none;
+    line-height: 52px;
+    font-size: 14px;
+    padding-left: 20px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .btn {
+    padding: 0 !important;
+    font-weight: 600;
+    color: $color-primary;
+  }
+}

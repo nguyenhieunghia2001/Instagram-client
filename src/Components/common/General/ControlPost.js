@@ -23,10 +23,10 @@ const ControlPost = () => {
         </div>
       </div>
       <p className="like">9 lượt thích</p>
-      <div className="content">
+      {/* <div className="content">
         <p className="friend-name">hanie.n2k</p>
         <span>V là hết thời học sinh :((</span>
-      </div>
+      </div> */}
       <div className="time">
         <span>20 THÁNG 5 2020</span>
       </div>

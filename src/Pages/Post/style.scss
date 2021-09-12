@@ -1,0 +1,40 @@
+@import "../../assets/variable.scss";
+
+.post {
+  display: flex;
+  border: 1px solid $color-gray;
+  border-radius: 3px;
+  justify-content: space-between;
+  .left {
+    max-width: calc(100% - 350px);
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    .header {
+      display: flex;
+      align-items: center;
+      .name {
+        cursor: pointer;
+        font-size: 14px;
+        color: $color-black;
+        font-weight: 600;
+        margin: 0;
+        padding-left: 16px;
+      }
+    }
+    .divider {
+      padding: 16px;
+      border-bottom: 1px solid $color-gray;
+    }
+    .control,
+    .write {
+      margin-top: auto;
+    }
+  }
+}
