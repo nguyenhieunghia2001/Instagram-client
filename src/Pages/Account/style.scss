@@ -1,0 +1,83 @@
+@import "../../assets/variable.scss";
+.account {
+  .top {
+    margin-bottom: 44px;
+    .account {
+      &__info {
+        &-row {
+          display: flex;
+          margin-bottom: 15px;
+          align-items: flex-end;
+          .account {
+            &-nickname {
+              font-size: 28px;
+              color: $color-black;
+              font-weight: lighter;
+              margin: 0;
+            }
+            &-setting {
+              svg {
+                font-size: 30px;
+              }
+            }
+            &-statistical {
+              margin-right: 40px;
+              span {
+                font-size: 16px;
+                .bold {
+                  font-weight: 600;
+                }
+              }
+            }
+            &-name {
+              color: $color-black;
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+          .btn-account {
+            border: 1px solid $color-gray;
+            font-size: 14px;
+            color: $color-black;
+            font-weight: 600;
+            padding: 5px 9px;
+            margin: 0 20px;
+          }
+        }
+      }
+    }
+  }
+  &__tab {
+    .tab__list {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      border-top: 1px solid $color-gray;
+      li {
+        margin-right: 60px;
+        cursor: pointer;
+        .item {
+          height: 52px;
+          display: flex;
+          align-items: center;
+          color: $color-font-1;
+          svg {
+            font-size: 12px;
+          }
+          p {
+            margin: 0 0 0 5px;
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+        .active {
+          border-top: 1px solid $color-black;
+          margin: -1px;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}
