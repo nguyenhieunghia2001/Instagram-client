@@ -1,5 +1,8 @@
 @import "../../assets/variable.scss";
 .account {
+  &__avatar{
+    text-align: center;
+  }
   .top {
     margin-bottom: 44px;
     .account {

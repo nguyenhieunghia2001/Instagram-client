@@ -68,9 +68,22 @@
         padding: 0 10px;
         cursor: pointer;
         .icon {
+          &-fill {
+            display: none;
+          }
           svg {
             color: #222;
             font-size: 28px;
+          }
+        }
+        .active {
+          .icon {
+            &-fill {
+              display: block;
+            }
+            &-outline {
+              display: none;
+            }
           }
         }
         .avatar {

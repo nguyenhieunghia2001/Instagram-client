@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { RiMessengerFill, RiMessengerLine } from "react-icons/ri";
 import { CgAddR } from "react-icons/cg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Container } from "reactstrap";
 import AvatarImg from "../../../assets/images/avatar.jpg";
 import LogoImg from "../../../assets/images/logo-name.png";
@@ -30,14 +30,28 @@ const Navbar = () => {
         <div className="navbar-menu">
           <ul>
             <li>
-              <div className="icon">
-                <AiOutlineHome />
-              </div>
+              <NavLink exact to="/" activeClassName="active" className="icon">
+                <div className="icon-outline">
+                  <AiOutlineHome />
+                </div>
+                <div className="icon-fill">
+                  <AiFillHome />
+                </div>
+              </NavLink>
             </li>
             <li>
-              <div className="icon">
-                <RiMessengerLine />
-              </div>
+              <NavLink
+                to="/messenger"
+                activeClassName="active"
+                className="icon"
+              >
+                <div className="icon-outline">
+                  <RiMessengerLine />
+                </div>
+                <div className="icon-fill">
+                  <RiMessengerFill />
+                </div>
+              </NavLink>
             </li>
             <li>
               <div className="icon" onClick={toggleOption}>
@@ -45,9 +59,14 @@ const Navbar = () => {
               </div>
             </li>
             <li>
-              <div className="icon">
-                <AiOutlineHeart />
-              </div>
+              <NavLink to="/love" activeClassName="active" className="icon">
+                <div className="icon-outline">
+                  <AiOutlineHeart />
+                </div>
+                <div className="icon-fill">
+                  <AiFillHeart />
+                </div>
+              </NavLink>
             </li>
             <li>
               <div className="avatar">

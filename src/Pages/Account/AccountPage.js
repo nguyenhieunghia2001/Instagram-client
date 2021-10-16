@@ -1,10 +1,9 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, NavLink } from "react-router-dom";
 import Avatar from "../../Components/common/Friend/Avatar";
 import AvatarImg from "../../assets/images/avatar-1.jpg";
 import { Col, Container, Row } from "reactstrap";
 import { IoSettingsOutline } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
 import { BsGrid3X3 } from "react-icons/bs";
 import { BiUserPin } from "react-icons/bi";
 import { RiSlideshow3Line, RiBookmarkLine } from "react-icons/ri";
